@@ -1,0 +1,63 @@
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <form action="/docentes/agregar" method="post">
+                        <div class="form group">
+                            <h2>Agregar Docente</h2>
+                        </div>
+                        <label for="">Nombre</label>
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="nombre_docente" id="">
+                        </div>
+                        <label for="">Edad</label>
+                        <div class="form-group">
+                            <input class="form-control"  type="text" name="edad" id="">
+                        </div>
+                        <label for="">Correo</label>
+                         <div class="form-group">
+                            <input class="form-control" type="text" name="correo" id="">
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-outline-success btn-block">Agregar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+<div class="col-md-8"> 
+    <div class="card-body">
+        <h1>Datos Tabla Docente</h1>
+       <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">id_docente</th>
+            <th scope="col">nombre_docente</th>
+            <th scope="col">edad</th>
+            <th scope="col">correo</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each docentes}}
+        <tr>
+            <th scope="row">{{id_docente}}</th>
+            <td>{{nombre_docente}}</td>
+            <td>{{edad}}</td>
+            <td>{{correo}}</td>
+            <td>
+
+                <a href="eliminar/{{id_docente}}" class="btn btn-danger">Eliminar</a>
+                <a href="" class="btn btn-info">Modificar</a>
+                
+            </td>
+            
+        </tr>
+      {{/each}}  
+    </tbody>
+    </table>
+    </div>
+    </div>
+    </div>
+    </div>
+
