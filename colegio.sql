@@ -25,9 +25,11 @@ CREATE TABLE `asigna_materia_docente` (
   `id_materia` int(45) DEFAULT NULL,
   `id_periodo` int(45) DEFAULT NULL,
   PRIMARY KEY (`id_amd`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 
 /*Data for the table `asigna_materia_docente` */
+
+insert  into `asigna_materia_docente`(`id_amd`,`id_docente`,`id_materia`,`id_periodo`) values (1,2,3,4),(2,2,3,4);
 
 /*Table structure for table `docentes` */
 
@@ -86,11 +88,11 @@ CREATE TABLE `notas` (
   `nota` int(45) DEFAULT NULL,
   `id_periodo` int(11) DEFAULT NULL,
   PRIMARY KEY (`id_notas`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 
 /*Data for the table `notas` */
 
-insert  into `notas`(`id_notas`,`id_docente`,`id_materia`,`nota`,`id_periodo`) values (1,NULL,NULL,4,NULL);
+insert  into `notas`(`id_notas`,`id_docente`,`id_materia`,`nota`,`id_periodo`) values (1,2,3,4,5),(2,2,3,5,5),(3,NULL,NULL,NULL,NULL),(4,2,3,5,5),(5,0,NULL,NULL,NULL);
 
 /*Table structure for table `periodo_academico` */
 

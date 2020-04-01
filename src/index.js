@@ -43,7 +43,7 @@ app.use('/estudiante',require('./routes/estudiante'));
 app.use('/docentes',require('./routes/docentes'));
 app.use('/notas',require('./routes/notas'));
 app.use('/materia',require('./routes/materia'));
-app.use('/asigar_materias',require('./routes/asignar_materias'));
+app.use('/asignar_materias',require('./routes/asignar_materias'));
 app.use('/periodo_academico',require('./routes/periodo_academico'));
 
 
