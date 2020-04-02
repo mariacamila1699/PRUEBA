@@ -26,38 +26,10 @@
                 </div>
             </div>
         </div>
-<div class="col-md-8"> 
-    <div class="card-body">
-        <h1>Datos Tabla Docente</h1>
-       <table class="table">
-        <thead>
-        <tr>
-            <th scope="col">id_docente</th>
-            <th scope="col">nombre_docente</th>
-            <th scope="col">edad</th>
-            <th scope="col">correo</th>
-        </tr>
-    </thead>
-    <tbody>
-        {{#each docentes}}
-        <tr>
-            <th scope="row">{{id_docente}}</th>
-            <td>{{nombre_docente}}</td>
-            <td>{{edad}}</td>
-            <td>{{correo}}</td>
-            <td>
 
-                <a href="eliminar/{{id_docente}}" class="btn btn-danger">Eliminar</a>
-                <a href="" class="btn btn-info">Modificar</a>
-                
-            </td>
-            
-        </tr>
-      {{/each}}  
-    </tbody>
-    </table>
     </div>
-    </div>
-    </div>
-    </div>
+
+</div>        
+
+   
 

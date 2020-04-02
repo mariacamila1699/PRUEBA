@@ -15,7 +15,7 @@ router.post('/agregar', async(req,res) => {
     const newdocente ={nombre_docente,edad,correo};
 
     await pool.query('insert into docentes set ?',[newdocente]);
-    res.redirect('/docentes/agregar');
+    res.redirect('/docentes/consultar');
 });
 
 
